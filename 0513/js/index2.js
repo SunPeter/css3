@@ -22,6 +22,12 @@ function init(){
     if (!Modernizr.csstransitions){
        ie=1;
     }
+    box.find("img").each(function(){
+        var t=$(this);
+        t.load(function(){
+            t.addClass("show");
+        });
+    });
     box.each(function(){
         var t=$(this);
         var index=t.index();
