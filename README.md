@@ -8,3 +8,8 @@ some demo with css3
 2.	learn how to use [modernizr](modernizr.com) to make our page works well on old browser
 3.	jquery to know img has benn complemety download,use  
   img.load();
+
+###0517
+A header animation fix some bug  	
+
+transition has some bug in firefox 

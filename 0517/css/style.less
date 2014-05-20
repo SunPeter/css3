@@ -1,0 +1,71 @@
+@import "../lib/css/reset.less";
+@import "../lib/css/mixins.less";
+
+body{
+  height: 1000px;
+}
+header{
+  width:100%;
+  height: 80px;
+  background: #7a43b6;
+  font:20px/80px Arial;
+  text-align: center;
+  overflow: visible;
+}
+nav{
+  width:100%;
+  height: 40px;
+  background: #00b3ee;
+  text-align: center;
+  font: 12px/40px Arial;
+  .wrap{
+    overflow: visible;
+    width:1000px;
+    margin:0 auto;
+    position: relative;
+    .box1{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #c3325f;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      .transition(all 0.6s linear 0s);
+      transform:scale(1) translate(0,-80px);
+      -webkit-transform:scale(1) translate(0,-80px);
+    }
+    .box2{
+      width: 60px;
+      height: 30px;
+      background: #0F0;
+      position: absolute;
+      right: 0;
+      top: 25px;
+      .transition(all .6s);
+      transform:scale(1) translate(0,-80px);
+      -webkit-transform:scale(1) translate(0,-80px);
+    }
+  }
+}
+.sm{
+
+  nav{
+    position: fixed;
+    _position:absolute;
+    top:0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    .wrap{
+      .box1{
+        transform:scale(0.4) translate(0,-50px);
+        -webkit-transform:scale(0.4) translate(0,-50px);
+      }
+      .box2{
+        transform:scale(0.4) translate(0,-50px);
+        -webkit-transform:scale(0.4) translate(0,-50px);
+      }
+    }
+  }
+}
