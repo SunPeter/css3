@@ -1,0 +1,53 @@
+@import "../lib/css/reset.less";
+@import "../lib/css/mixins.less";
+body{
+  background: #555555;
+}
+.board{
+  width: 1000px;
+  margin:0 auto;
+  .ball{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    .animation(rotate 3s linear 0s infinite);
+    overflow: hidden;
+
+    background:#00b3ee;
+
+    i{
+      position: absolute;
+      display: block;
+      width:6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #FF0;
+      top: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+  }
+}
+
+@keyframes rotate{
+  from {
+    transform: rotateZ(0) rotateY(0);
+    -webkit-transform: rotateZ(0) rotateY(0);
+  }
+  to {
+    transform: rotateZ(360deg) rotateY(180deg);
+    -webkit-transform:  rotateZ(360deg) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes rotate{
+  from {
+    transform: rotateZ(0) rotateY(0);
+    -webkit-transform: rotateZ(0) rotateY(0);
+  }
+  to {
+    transform: rotateZ(360deg) rotateY(180deg);
+    -webkit-transform:  rotateZ(360deg) rotateY(180deg);
+  }
+}
