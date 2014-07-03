@@ -18,3 +18,11 @@ transition has some bug in firefox
 learn transform3D
 
 	rotateX rotateY rotateZ
+
+###0702
+display:box 
+
+box-sizing:border-box
+
+box-pack  元素水平布局
+box-align 元素垂直布局
